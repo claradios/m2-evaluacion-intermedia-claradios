@@ -1,6 +1,14 @@
 .page{
+height:100vh;
+margin:0;
+padding:0 20px;
 background-color:lightgrey;
-text-align:center;
+display:flex;
+flex-direction:column;
+justify-content:space-around;
+align-items:center;
+
+
 
 }
 .page__header{
@@ -31,8 +39,13 @@ flex-direction:column;
 
 }
 .page__footer{
-
+    width:100%;   
+    text-align:center;
 }
-.footer__text{
 
+.footer__text{
+    
+width:100%;
+color:blue;
+border: 1px solid blue;
 }

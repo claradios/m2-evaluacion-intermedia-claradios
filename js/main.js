@@ -1,39 +1,51 @@
 'use strict';
 //recojo mis objetos html en variables const
 const counter = document.querySelector('.header__counter');
-const input =document.querySelector('#guessnumber');
+const input =document.querySelector('.main__input');
 const btn = document.querySelector('.btn');
 const footerText = document.querySelector('.footer__text');
 
+console.log(input);
+console.log (footerText);
+console.log(input);
 
+let n=0;
+counter.innerHTML=0;  
+
+
+//generamos un número random
 function getRandomNumber(max) {
     return Math.ceil(Math.random() * max);
   }
-  const myRandomNumber = getRandomNumber(100); 
-  const inputNumber = parseInt(input.value);
-  console.log(inputNumber);
-  console.log(inputNumber);
-  console.log(inputNumber);
+let myRandomNumber = getRandomNumber(100); 
+console.log(myRandomNumber);
 
+
+//generamos la función que activa el botón
 function guessGame(){
     
-    if (inputNumber===myRandomNumber){
-        footerText.innerHTML='lo has conseguido';
+    const inputNumber = parseInt(input.value);
+    console.log(inputNumber);
+   
+    if (inputNumber === myRandomNumber){
+        footerText.innerHTML='¡HAS GANADO, CAMPEONA!';
     }
-    else if (inputNumber>myRandomNumber){
+    else if (inputNumber > myRandomNumber){
         footerText.innerHTML='el número es muy alto';
     }
-    else if (inputNumber<myRandomNumber){
+    else if (inputNumber < myRandomNumber){
         footerText.innerHTML='el número es muy bajo';
     }
-    else (inputNumber==='')
-        footerText.innerHTML='introduce un número para participar';
-
+    else {footerText.innerHTML='has de introducir un número!';}
+        
+    
+        n = n+1;
+        counter.innerHTML = n;
 }
 
+//escucho al botón de comprobar (escuchar SI funciona)
 
-btn.addEventListener('click',guessGame());
-
+btn.addEventListener('click',guessGame);
 
 
 
