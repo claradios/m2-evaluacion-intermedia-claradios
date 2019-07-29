@@ -7,7 +7,21 @@
     <title>m2 evaluacion intermedia</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class = "page">
+    <header class="page__header">
+        <h1 class="header__title">Adivina el número</h1>
+        <div class="header__counter"></div>
+    </header>
+    <main class="page__main">
+        <p class="main__text">Introduce aquí tu número</p>
+        <label for="guessnumber" class="main__input-label"></label>
+        <input type="number" class="main__input" id="guessnumber">
+        <button class="btn">Prueba</button>
+    </main>
+    <footer class="page__footer">        
+        <p class="footer_text">Escribe un número y dale a prueba</p>
+    </footer>
+
     <script src="js/main.js"></script>
 </body>
 </html>
