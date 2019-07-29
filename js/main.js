@@ -5,9 +5,6 @@ const input =document.querySelector('.main__input');
 const btn = document.querySelector('.btn');
 const footerText = document.querySelector('.footer__text');
 
-console.log(input);
-console.log (footerText);
-console.log(input);
 
 let n=0;
 counter.innerHTML=0;  
@@ -36,14 +33,16 @@ function guessGame(){
     else if (inputNumber < myRandomNumber){
         footerText.innerHTML='el número es muy bajo';
     }
-    else {footerText.innerHTML='has de introducir un número!';}
+    else {
+        footerText.innerHTML='has de introducir un número!';
+    }
         
     
         n = n+1;
         counter.innerHTML = n;
 }
 
-//escucho al botón de comprobar (escuchar SI funciona)
+//escucho al botón de comprobar 
 
 btn.addEventListener('click',guessGame);
 

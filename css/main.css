@@ -1,51 +1,44 @@
 .page{
-height:100vh;
-margin:0;
-padding:0 20px;
-background-color:lightgrey;
-display:flex;
-flex-direction:column;
-justify-content:space-around;
-align-items:center;
-
-
-
-}
-.page__header{
-
-}
-.header__title{
-
+    height:100vh;
+    margin:0;
+    padding:0 30px;
+    background-color:lightgrey;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    font-family:Arial, Helvetica, sans-serif;
 }
 .header__counter{
-color:red;
-font-size:50px;
-font-weight:700;
+    position:absolute;
+    right:30px;
+    top:130px;
+    color:red;
+    font-size:50px;
+    font-weight:700;
 }
 .page__main{
-display:flex;
-justify-content: center;
-align-items:center;
-flex-direction:column;
-}
-.main__text{
-
-}
-
-#guessnumber{
-
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction:column;
 }
 .btn{
-
+    margin:30px;
+    width:100%;
+    border-radius:3px;
+    padding:3px;
+    font-size:14px;
 }
 .page__footer{
     width:100%;   
     text-align:center;
 }
-
-.footer__text{
-    
-width:100%;
-color:blue;
-border: 1px solid blue;
+.footer__text{    
+    width:100%;
+    color:blue;
+    border: 1px solid blue;
+    padding:15px 0;
 }
