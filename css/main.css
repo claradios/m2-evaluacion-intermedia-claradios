@@ -7,15 +7,29 @@
     flex-direction:column;
     justify-content:space-around;
     align-items:center;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Karla', sans-serif;    
+}
+.header__title{
+    color:lightgrey;    
+    font-size: 50px;
+    text-shadow: -1px -1px 1px #0000ff, 1px -1px 1px #0000ff, -1px 1px 1px #0000ff, 1px 1px 1px #0000ff;
+    transition-duration: 0.4s;
+}
+.header__title:hover{
+    color:yellow;
 }
 .header__counter{
     position:absolute;
     right:30px;
     top:130px;
-    color:red;
+    color:lightgrey;
+    text-shadow: -1px -1px 1px #ff0000, 1px -1px 1px #ff0000, -1px 1px 1px #ff0000, 1px 1px 1px #ff0000;    
     font-size:50px;
     font-weight:700;
+    transition-duration: 0.4s;
+}
+.header__counter:hover{
+    color:yellow;
 }
 .page__main{
     margin:0;
@@ -25,21 +39,37 @@
     align-items:center;
     flex-direction:column;
 }
-.btn{
+.btn {
+    background-color:lightgrey;
     margin:30px;
-    width:100%;
-    border-radius:3px;
-    padding:3px;
-    font-size:14px;
-    background-color:rgb(250, 248, 248);
+    width:100px;
+    height:40px;
+    border-radius: 1px;
+    border: 5px double yellow;  
+    font-size:14px;      
+    transition-duration: 0.4s;  
 }
-.reset {
+.btn:hover{
+    border: 5px double darkgrey;
+    background-color:white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
+    font-size:14.5px;   
+}
+.reset-btn {
+    background-color:lightgrey;
     margin:30px;
-    width:100%;
-    border-radius:3px;
-    padding:3px;
-    font-size:14px;
-    background-color:rgb(250, 248, 248);
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    border: 6px double #ff0000;  
+    font-size:14px;      
+    transition-duration: 0.4s;  
+}
+.reset-btn:hover{
+    border: 5px double darkgrey;
+    background-color:white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
+    font-size:14.5px;   
 }
 .page__footer{
     width:100%;   
@@ -50,4 +80,32 @@
     color:blue;
     border: 1px solid blue;
     padding:15px 0;
+    transition-duration: 0.4s; 
 }
+
+.footer__text:hover{    
+   border-radius:76% 24% 69% 31% / 52% 52% 48% 48%;
+}
+
+.main__input{
+    margin:30px;
+    height:30px;
+    text-align:center;
+    transition-duration: 0.4s;
+    background-color:lightgrey;
+}
+
+.main__input:hover{
+    border-radius:76% 24% 69% 31% / 52% 52% 48% 48%;
+}
+
+.rotate-text{  
+ 
+      transform: rotate(-7deg);  
+       
+  
+      transform-origin: 50% 50%;  
+       
+       
+     ;  
+} 

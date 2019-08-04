@@ -34,7 +34,7 @@ function guessGame(){
         footerText.innerHTML = '<strong>¡¿Dónde vas?!</strong> El número ha de ser menor que 100';
     }
     else if (inputNumber<0) {
-        footerText.innerHTML = '<strong>¡no se acepta tanta negatividad!</strong>Es un número positivo'
+        footerText.innerHTML = '<strong>¡no se acepta tanta negatividad!</strong> Es un número positivo'
     }
     else if (inputNumber > myRandomNumber){
         footerText.innerHTML = 'el número es muy alto';
