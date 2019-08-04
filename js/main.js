@@ -25,19 +25,23 @@ function guessGame(){
     console.log(inputNumber);
    
     if (inputNumber === myRandomNumber){
-        footerText.innerHTML='¡HAS GANADO, CAMPEONA!';
+        footerText.innerHTML= '¡HAS GANADO, CAMPEONA!';
+    }
+    else if (inputNumber >100) {
+        footerText.innerHTML = '¡¿Dónde vas?! el número ha de ser menor que 100';
+    }
+    else if (inputNumber<0) {
+        footerText.innerHTML = '¡no se acepta tanta negatividad!'
     }
     else if (inputNumber > myRandomNumber){
-        footerText.innerHTML='el número es muy alto';
+        footerText.innerHTML = 'el número es muy alto';
     }
     else if (inputNumber < myRandomNumber){
-        footerText.innerHTML='el número es muy bajo';
+        footerText.innerHTML = 'el número es muy bajo';
     }
     else {
-        footerText.innerHTML='has de introducir un número!';
-    }
-        
-    
+        footerText.innerHTML= 'has de introducir un número!';
+    }        
         tries++;
         counter.innerHTML = tries;
 }
