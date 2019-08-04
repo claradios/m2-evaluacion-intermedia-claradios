@@ -48,13 +48,21 @@ function guessGame(){
     }
     else {
         footerText.innerHTML= '<strong>No funciona así.</strong>¡Has de introducir un número, no una letra!';
-    }        
-        
+    }          
 }
 
-//escucho al botón de comprobar 
 
+function pressEnter (event) {
+    if (event.key==='Enter') {
+        guessGame();
+    }
+}
+
+//escucho al botón de comprobar y al enter
 btn.addEventListener('click',guessGame);
+document.addEventListener('keyup', pressEnter);
+
+
 
 
 
