@@ -5,6 +5,7 @@ const input =document.querySelector('.main__input');
 const btn = document.querySelector('.btn');
 const resetBtn = document.querySelector('.reset-btn');
 const footerText = document.querySelector('.footer__text');
+const prize = document.querySelector('.prize');
 
 
 let tries=0;
@@ -28,7 +29,8 @@ function guessGame(){
     console.log(inputNumber);
    
     if (inputNumber === myRandomNumber){
-        footerText.innerHTML= '¡HAS GANADO, CAMPEONA!';
+        footerText.innerHTML= '<strong>👏👏👏👏¡HAS GANADO, CAMPEONA!</strong>👏👏👏👏';
+        prize.innerHTML='>>💖<<';
     }
     else if (inputNumber >100) {
         footerText.innerHTML = '<strong>¡¿Dónde vas?!</strong> El número ha de ser menor que 100';
@@ -70,6 +72,7 @@ function resetGame () {
     myRandomNumber = getRandomNumber(100); 
     console.log(myRandomNumber);
 }
+
 
 
 //escucho al botón de comprobar y al enter

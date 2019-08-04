@@ -39,6 +39,22 @@
     align-items:center;
     flex-direction:column;
 }
+
+.main__input{
+    margin:30px;
+    height:30px;
+    text-align:center;
+    transition-duration: 0.4s;
+    background-color:lightgrey;
+}
+
+.main__input:hover{
+    border-radius:76% 24% 69% 31% / 52% 52% 48% 48%;
+}
+.rotate-text{   
+      transform: rotate(-7deg);           
+      transform-origin: 50% 50%;                
+} 
 .btn {
     background-color:lightgrey;
     margin:30px;
@@ -82,30 +98,42 @@
     padding:15px 0;
     transition-duration: 0.4s; 
 }
-
 .footer__text:hover{    
    border-radius:76% 24% 69% 31% / 52% 52% 48% 48%;
 }
-
-.main__input{
-    margin:30px;
-    height:30px;
+.prize{
+    margin-top:90px;
+    font-size:40px;
+    color:pink;
     text-align:center;
-    transition-duration: 0.4s;
-    background-color:lightgrey;
+    text-shadow: -1px -1px 1px #0000ff, 1px -1px 1px #0000ff, -1px 1px 1px #0000ff, 1px 1px 1px #0000ff;
+    transform: rotate(9deg);           
+    transform-origin: 50% 50%;  
+    animation-name: arrowup;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 
-.main__input:hover{
-    border-radius:76% 24% 69% 31% / 52% 52% 48% 48%;
-}
+@keyframes arrowup {
+    0% {
+        box-shadow: 0 0 4px rgba(black, .5);
+        transform:translate(0,-50%);
+        font-size:40px;
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(black, .5);
+        transform:translate(0,-25%);
+        font-size:38px;
+    }
+    85% {
+        box-shadow: 0 0 40px rgba(black, .25);
+        font-size:38px;
+    }
+    100% {
+        box-shadow: 0 0 4px rgba(black, .3);
+        transform:translate(0,-50%);
+        font-size:40px;
+    }
+  }
 
-.rotate-text{  
- 
-      transform: rotate(-7deg);  
-       
-  
-      transform-origin: 50% 50%;  
-       
-       
-     ;  
-} 
