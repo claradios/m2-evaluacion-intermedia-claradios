@@ -6,7 +6,7 @@ const btn = document.querySelector('.btn');
 const footerText = document.querySelector('.footer__text');
 
 
-let n=0;
+let tries=0;
 counter.innerHTML=0;  
 
 
@@ -38,8 +38,8 @@ function guessGame(){
     }
         
     
-        n = n+1;
-        counter.innerHTML = n;
+        tries++;
+        counter.innerHTML = tries;
 }
 
 //escucho al botón de comprobar 
