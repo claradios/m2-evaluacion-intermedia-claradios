@@ -3,11 +3,14 @@
 const counter = document.querySelector('.header__counter');
 const input =document.querySelector('.main__input');
 const btn = document.querySelector('.btn');
+const resetBtn = document.querySelector('.reset-btn');
 const footerText = document.querySelector('.footer__text');
 
 
 let tries=0;
 counter.innerHTML=tries;  
+
+
 
 
 //generamos un número random
@@ -58,13 +61,25 @@ function pressEnter (event) {
     }
 }
 
+
+function resetGame () {
+    tries=0;
+    counter.innerHTML=tries;
+    input.value = "";
+    footerText.innerHTML = 'Escribe un número y dale a <em>prueba</em>';
+    myRandomNumber = getRandomNumber(100); 
+    console.log(myRandomNumber);
+}
+
+
 //escucho al botón de comprobar y al enter
 btn.addEventListener('click',guessGame);
 document.addEventListener('keyup', pressEnter);
+resetBtn.addEventListener('click',resetGame);
 
 
 
-
+//Add a reset button that cleans the input, the counter, writes the initial feedback and generates a new random number to play again!
 
 
 
