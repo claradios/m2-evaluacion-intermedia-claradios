@@ -7,7 +7,7 @@ const footerText = document.querySelector('.footer__text');
 
 
 let tries=0;
-counter.innerHTML=0;  
+counter.innerHTML=tries;  
 
 
 //generamos un número random
